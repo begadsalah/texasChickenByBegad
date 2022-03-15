@@ -1,0 +1,57 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: 'BERNIER' !important;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll !important; 
+  }
+
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+
+
+a {
+  color: unset !important;
+  text-decoration: none !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+.carousel .control-dots {
+  margin: 27px 0 !important;
+}
+.carousel .control-dots .dot {
+  transition: opacity .25s ease-in;
+  opacity: .3;
+  filter: alpha(opacity=30);
+  box-shadow: 4px 4px 8px rgb(0 0 0 / 90%) !important;
+  background: #fff;
+  border-radius: 50%;
+  width: 15px !important;
+  height: 15px !important;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 8px;
+}
+@layer base {
+  @font-face{
+    font-family: 'biker';
+    src: url('/fonts/Biker-Three.woff') format('woff');
+    font-weight:600;
+    font-display:swap;
+    font-size:normal;
+  }
+  @font-face{
+    font-family: 'BERNIER';
+    src: url('/fonts/BERNIERRegular-Regular.woff2') format('woff2');
+    font-weight:600;
+    font-display:swap;
+    font-size:normal;
+  }
+}

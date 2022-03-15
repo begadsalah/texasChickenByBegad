@@ -1,0 +1,37 @@
+.container{
+    background-color:#2D2926;
+    color: white;
+    padding: 3rem 7rem;
+}
+.solidLine{
+    border-top: 1px solid rgba(187, 187, 187, 0.5);
+}
+.aLinks{
+    color:#A39382;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: captilaize;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+.sideCol{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 3rem 1rem;
+}
+.sideSpan{
+    color: #FFCA2C;
+}
+.brandsLogo{
+    padding: 0.7rem;
+    background-color: #3e3d3dd9;
+    border-radius: 50%;
+    margin: 0.3rem;
+    transition: all .3s ease-in-out;
+}
+.brandsLogo:hover{
+    background-color: #F8B02D;
+    
+}

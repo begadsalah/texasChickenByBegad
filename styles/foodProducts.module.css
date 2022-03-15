@@ -1,0 +1,81 @@
+.mainFirstCol{
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    flex-direction:column;
+    padding:2rem;
+    background: url("/images/bgwood.jpg")bottom;
+}
+.SubRow{
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    border-bottom:1px solid #F7AF2B;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.SubRow>h4{
+    font-size: 20px !important;
+    color:#9A2E25;
+}
+.mainSecondCol{
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+}
+.productsRow{
+    padding: 1rem;
+    display:flex;
+    justify-content:baseline;
+    align-items:flex-start;
+}
+.productsRow>h1{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin: 2rem;
+    font-size: 4rem;
+    color: #F8B438;
+}
+.card{
+    border: none !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: transparent;
+    height: 26rem;
+    padding: 1.2rem;
+}
+.cardBody{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-family:arial;
+    padding: 1rem;
+}
+.cardButton{
+    font-size: 15px !important;
+    text-transform: capitalize !important;
+    background: #9a3324 !important;
+    padding: 0.5rem 0rem !important;
+    border-radius: 9px !important;
+    -webkit-transition: all .3s ease-in-out !important;
+    transition: all .3s ease-in-out !important;
+    position: relative !important;
+    cursor: pointer !important;
+    display: table !important;
+    width: 100% !important;
+    display:flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border: none !important;
+    font-weight: 600 !important;
+    color: white;
+    text-alignemnet: center;
+    margin: 0 1rem;
+}
+.cardButton:hover{
+    color:hsl(39, 93%, 60%);
+}

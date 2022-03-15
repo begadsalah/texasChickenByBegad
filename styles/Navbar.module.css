@@ -1,0 +1,129 @@
+.container {
+    padding: 0 25px;
+    background-color: #2C2925;
+    color: #ffffff;
+    height: 100px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.col:nth-child(2) {
+    flex: 3;
+}
+
+.col:last-child {
+    justify-content: flex-end;
+}
+
+.texts {
+    margin-left: 15px;
+}
+
+.text:first-child {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.text:last-child {
+    font-weight: bold;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+
+.listItem {
+    margin: 10px;
+    
+}
+.listItemOrder{
+    padding: 0.6rem;
+    margin: 15px;
+    background-color:rgb(247, 175, 43) ;
+    border-radius: 9px;
+    transition: all .4s ease-in-out !important;
+}
+.listItemOrder:hover{
+    background-color:white !important;
+}
+.navbarLinkOrder{
+    color: #2C2925;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration:none;
+    font-size: 1.3rem;
+    letter-spacing: 1.7px;
+    transition: all .4s ease-in-out !important;
+}
+.navbarLinkOrder:hover{
+    color: #2C2925;
+}
+.cart {
+    position: relative;
+    cursor: pointer;
+    margin: 3px;
+}
+
+.cartCounter {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #ff0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 3px;
+}
+.navbarLink{
+color: rgb(247, 175, 43);
+text-transform: uppercase;
+font-weight: 700;
+text-decoration:none;
+font-size: 1.3rem;
+letter-spacing: 1.2px;
+transition: all .3s ease-in-out;
+}
+.navbarLink:hover{
+color: #9A3324;
+
+}
+.logo{
+    padding: 0.5rem !important;
+    transition: all .4s ease-in-out !important;
+}
+.logo:hover{
+    transform:scale(1.02)
+}
+@media screen and (max-width: 768px) {
+    .row {
+        padding: 15px 0;
+    }
+    .col {
+        flex: 1;
+    }
+    
+    .col:nth-child(2) {
+        display: none;
+        /* for navigation it is best to do RESPONSIVE NAVIGATION */
+    }
+}

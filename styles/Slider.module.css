@@ -1,0 +1,41 @@
+
+.listItemOrder{
+    padding: 0.6rem;
+    margin: 15px;
+    background-color:rgb(247, 175, 43) ;
+    border-radius: 9px;
+}
+.navbarLinkOrder{
+    color: #2C2925;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.SliderButtons{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 7rem;
+}
+.SliderButton{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    margin-left: 4rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 0.7rem 1rem ;
+    color: #2C2925;
+    text-transform: uppercase;
+}
+.carousel .thumbs-wrapper{
+    display: flex !important;
+    justify-content: center !important;
+}
+.sliderRow{
+    display: flex;
+    flex-wrap: wrap;
+}
