@@ -1,3 +1,4 @@
+/* eslint-enable */
 import React from 'react'
 import styles from '../styles/footer.module.css'
 import Row from 'react-bootstrap/Row'
@@ -11,26 +12,26 @@ const Footer = () => {
     <div className={styles.container}>
       <Row xs={12} s={12} lg={12} m={12}>
         <Col className={styles.sideCol}>
-          <h6><a>DISCOVER TEXAS</a></h6>
-          <a className={styles.aLinks}>Our Story</a>
-          <a className={styles.aLinks}>HALAL</a>
+          <h6>DISCOVER TEXAS</h6>
+          <p className={styles.aLinks}>Our Story</p>
+          <p className={styles.aLinks}>HALAL</p>
         </Col>
         <Col className={styles.sideCol}>
-          <h6><a>WORK WITH US</a></h6>
-          <a className={styles.aLinks}>Careers</a>
-          <a className={styles.aLinks}>Franchising</a>
+          <h6>WORK WITH US</h6>
+          <p className={styles.aLinks}>Careers</p>
+          <p className={styles.aLinks}>Franchising</p>
         </Col>
         <Col className={styles.sideCol}>
-          <h6><a>TEXAS WAY</a></h6>
-          <a className={styles.aLinks}>Birthday Package</a>
+          <h6><p>TEXAS WAY</p></h6>
+          <p className={styles.aLinks}>Birthday Package</p>
         </Col>
         <Col className={styles.sideCol}>
-          <h6><a>LET'S TALK</a></h6>
-          <a className={styles.aLinks}>Contact Us</a>
-          <a className={styles.aLinks}>FAQs</a>
+          <h6><p>LET'S TALK</p></h6>
+          <p className={styles.aLinks}>Contact Us</p>
+          <p className={styles.aLinks}>FAQs</p>
         </Col>
         <Col className={styles.sideCol}>
-          <h6><a>TEXAS CHICKEN | <span className={styles.sideSpan}>UAE</span></a></h6>
+          <h6><p>TEXAS CHICKEN | <span className={styles.sideSpan}>UAE</span></p></h6>
         </Col>
       </Row>
       <Row>
@@ -59,8 +60,8 @@ const Footer = () => {
       <Row>
         <hr className={styles.solidLine} />
         <Col><p className={styles.aLinks}>All rights reserved. | Developed & Designed byPSdigital.</p></Col>
-        <Col><a>Privacy Policy</a>
-          <a>Terms & Condition</a></Col>
+        <Col><p>Privacy Policy</p>
+          <p>Terms & Condition</p></Col>
         <Col><Row xs={12} s={12} lg={12} m={12}>
           <Col xs={4} s={4} lg={4} m={4}><Image src='/images/googlePlay.png' fluid /></Col>
           <Col xs={4} s={4} lg={4} m={4}><Image src='/images/appStore.png' fluid /></Col>

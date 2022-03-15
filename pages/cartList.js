@@ -1,10 +1,13 @@
-import React, { useState, useEffect } from "react";
+/* eslint-enable */
+import React from "react";
 import { connect } from "react-redux";
 import styles from '../styles/Cart.module.css'
 import CartItem from '../components/CartItem';
 
-const cartList = ({ cart }) => {
-    const [totalPrice, setTotalPrice] = useState(0);
+const CartList = ({ cart }) => {
+    {/* eslint eqeqeq: "off", curly: "error" */ }
+
+    /*const [totalPrice, setTotalPrice] = useState(0);
     const [totalItems, setTotalItems] = useState(0);
 
     useEffect(() => {
@@ -18,7 +21,7 @@ const cartList = ({ cart }) => {
 
         setTotalItems(items);
         setTotalPrice(price);
-    }, [cart, totalPrice, totalItems, setTotalPrice, setTotalItems]);
+    }, [cart, totalPrice, totalItems, setTotalPrice, setTotalItems]);*/
     return (
         <div className={styles.cart}>
             <div className={styles.cart__items}>
@@ -45,4 +48,4 @@ const mapStateToProps = (state) => {
     };
 };
 
-export default connect(mapStateToProps)(cartList);
+export default connect(mapStateToProps)(CartList);

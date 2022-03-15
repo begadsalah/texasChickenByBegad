@@ -1,3 +1,4 @@
+/* eslint-enable */
 import React from 'react'
 import styles from '../styles/Catagories.module.css'
 import Link from 'next/link';
@@ -25,6 +26,7 @@ const Catagories = ({ catagories }) => {
                         <Card style={{ width: '18rem' }} className={styles.card}>
                             <Card.Img className={styles.cardImg} variant="top" src={catagory.ImagePath} />
                             <Card.Body className={styles.cardBody}>
+                                {/* eslint eqeqeq: "off", curly: "error" */}
                                 <Link className={styles.cardLink} href="/foodProducts"><Card.Title className={styles.cardTitle}>{catagory.Name}</Card.Title></Link>
                                 <Card.Text className={styles.cardText}>
                                     {catagory.Description}

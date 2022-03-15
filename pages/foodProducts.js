@@ -25,7 +25,7 @@ export const getStaticProps = async () => {
     };
 };
 
-const foodProducts = ({ foodProduct, product, addToCart, loadCurrentItem }) => {
+const FoodProducts = ({ foodProduct, product, addToCart, loadCurrentItem }) => {
 
     return (
         <div className={styles.container}>
@@ -81,5 +81,5 @@ const mapDispatchToProps = (dispatch) => {
     };
 };
 
-export default connect(null, mapDispatchToProps)(foodProducts);
+export default connect(null, mapDispatchToProps)(FoodProducts);
 

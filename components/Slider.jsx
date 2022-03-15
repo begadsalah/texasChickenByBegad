@@ -1,3 +1,5 @@
+{/* eslint eqeqeq: "off", curly: "error" */ }
+/* eslint-enable */
 import React from 'react';
 import styles from '../styles/Slider.module.css'
 import Link from 'next/link';
@@ -8,10 +10,7 @@ import Image from 'react-bootstrap/Image'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 const Slider = () => {
-    <script>
-        document.getElementById('vid').play();
-    </script>
-
+    {/* eslint eqeqeq: "off", curly: "error" */ }
     return (
         <div>
             <Carousel className={styles.container} autoPlay={true} infiniteLoop={true} interval={2000}>
