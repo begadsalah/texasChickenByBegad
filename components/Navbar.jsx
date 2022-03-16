@@ -33,7 +33,7 @@ const Navbar = ({ cart }) => {
                             <Link href="/Story"><a className={styles.navbarLink}>Story</a></Link>
                         </li>
                         <li className={styles.listItem}>
-                            <Link href="/Catagories"><a className={styles.navbarLink}>Food</a></Link>
+                            <Link href="/Catagories"><a className={styles.navbarLink}>food</a></Link>
                         </li>
                         <li className={styles.listItem}>
                             <Link href="/Location"><a className={styles.navbarLink}>Location</a></Link>
@@ -48,7 +48,7 @@ const Navbar = ({ cart }) => {
                         <FontAwesomeIcon icon={['fas', 'fa-user-circle']} style={{ color: 'rgb(247, 175, 43)', width: '1.1rem', height: '1.1rem' }} />
                     </div>
                     <div className={styles.cart}>
-                        <Link href="/cartList">
+                        <Link href="/food">
                             <Image src="/images/download.png" alt="Phone" width={30} height={28}></Image>
                         </Link>
                         <div className={styles.cartCounter}>{cartCount}</div>

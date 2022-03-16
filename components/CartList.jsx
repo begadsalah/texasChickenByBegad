@@ -1,11 +1,10 @@
 /* eslint-enable */
-import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import styles from '../styles/Cart.module.css'
-import CartItem from '../components/CartItem';
+import React, { useState, useEffect } from "react";
+import CartItem from './CartItem';
 
 const CartList = ({ cart }) => {
-    {/* eslint eqeqeq: "off", curly: "error" */ }
 
     const [totalPrice, setTotalPrice] = useState(0);
     const [totalItems, setTotalItems] = useState(0);

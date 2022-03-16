@@ -29,7 +29,7 @@ const OrderNowSection = () => {
                 <Col className={styles.elementCol}>
                     <Card className={styles.elementCol} style={{ width: '18rem', backgroundColor: 'transparent' }}>
                         <div className={styles.cart}>
-                            <Link href="/cartList">
+                            <Link href="/food">
                                 <Image src="/images/download.png" alt="Phone" width={48} height={48}></Image>
                             </Link>
                         </div>
@@ -42,7 +42,7 @@ const OrderNowSection = () => {
                 <Col className={styles.elementCol}>
                     <Card className={styles.elementCol} style={{ width: '18rem', backgroundColor: 'transparent' }}>
                         <div className={styles.cart}>
-                            <Link href="/cartList">
+                            <Link href="/food">
                                 <Image src="/images/download.png" alt="Phone" width={48} height={48}></Image>
                             </Link>
                         </div>
@@ -55,7 +55,7 @@ const OrderNowSection = () => {
                 <Col className={styles.elementCol}>
                     <Card className={styles.elementCol} style={{ width: '18rem', backgroundColor: 'transparent' }}>
                         <div className={styles.cart}>
-                            <Link href="/cartList">
+                            <Link href="/food">
                                 <Image src="/images/download.png" alt="Phone" width={48} height={48}></Image>
                             </Link>
                         </div>
@@ -68,7 +68,7 @@ const OrderNowSection = () => {
                 <Col className={styles.elementCol}>
                     <Card className={styles.elementCol} style={{ width: '18rem', backgroundColor: 'transparent' }}>
                         <div className={styles.cart}>
-                            <Link href="/cartList">
+                            <Link href="/food">
                                 <Image src="/images/download.png" alt="Phone" width={48} height={48}></Image>
                             </Link>
                         </div>
