@@ -17,7 +17,7 @@ export const getStaticProps = async () => {
     };
 };
 
-const Catagories = ({ catagories }) => {
+const Catagories = React.forwardRef(({ onClick, href, catagories }, ref) => {
     return (
         <div className={styles.container}>
             <Row>
@@ -27,7 +27,7 @@ const Catagories = ({ catagories }) => {
                             <Card.Img className={styles.cardImg} variant="top" src={catagory.ImagePath} />
                             <Card.Body className={styles.cardBody}>
                                 {/* eslint eqeqeq: "off", curly: "error" */}
-                                <Link className={styles.cardLink} href="/foodProducts"><Card.Title className={styles.cardTitle}>{catagory.Name}</Card.Title></Link>
+                                <Link className={styles.cardLink} passHref href="/foodProducts"><Card.Title className={styles.cardTitle}>{catagory.Name}</Card.Title></Link>
                                 <Card.Text className={styles.cardText}>
                                     {catagory.Description}
                                 </Card.Text>
@@ -39,6 +39,6 @@ const Catagories = ({ catagories }) => {
             </Row>
         </div>
     )
-}
+})
 
 export default Catagories

@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
 import Image from 'react-bootstrap/Image'
 
-const OrderNowSection = () => {
+const OrderNowSection = React.forwardRef(({ onClick, href }, ref) => {
     return (
         <div className={styles.container}>
             <Row> <h1 className={styles.mainTitle}>ORDER <span className={styles.ordernowSpan}>NOW</span></h1></Row>
@@ -29,7 +29,7 @@ const OrderNowSection = () => {
                 <Col className={styles.elementCol}>
                     <Card className={styles.elementCol} style={{ width: '18rem', backgroundColor: 'transparent' }}>
                         <div className={styles.cart}>
-                            <Link href="/food">
+                            <Link passHref href="/food">
                                 <Image src="/images/download.png" alt="Phone" width={48} height={48}></Image>
                             </Link>
                         </div>
@@ -42,7 +42,7 @@ const OrderNowSection = () => {
                 <Col className={styles.elementCol}>
                     <Card className={styles.elementCol} style={{ width: '18rem', backgroundColor: 'transparent' }}>
                         <div className={styles.cart}>
-                            <Link href="/food">
+                            <Link passHref href="/food">
                                 <Image src="/images/download.png" alt="Phone" width={48} height={48}></Image>
                             </Link>
                         </div>
@@ -55,7 +55,7 @@ const OrderNowSection = () => {
                 <Col className={styles.elementCol}>
                     <Card className={styles.elementCol} style={{ width: '18rem', backgroundColor: 'transparent' }}>
                         <div className={styles.cart}>
-                            <Link href="/food">
+                            <Link passHref href="/food">
                                 <Image src="/images/download.png" alt="Phone" width={48} height={48}></Image>
                             </Link>
                         </div>
@@ -68,19 +68,19 @@ const OrderNowSection = () => {
                 <Col className={styles.elementCol}>
                     <Card className={styles.elementCol} style={{ width: '18rem', backgroundColor: 'transparent' }}>
                         <div className={styles.cart}>
-                            <Link href="/food">
+                            <Link passHref href="/food">
                                 <Image src="/images/download.png" alt="Phone" width={48} height={48}></Image>
                             </Link>
                         </div>
                         <Card.Img variant="top" src="/images/Burger4.png" />
                         <Card.Body className={styles.cardBody}>
-                            <Button className={styles.cardButton} variant="danger"><Link href="/foodProducts" className={styles.buttonLink}>Chicken Mucho Picante</Link> <span>SAR<span>22</span></span></Button>
+                            <Button className={styles.cardButton} variant="danger"><Link passHref href="/foodProducts" className={styles.buttonLink}>Chicken Mucho Picante</Link> <span>SAR<span>22</span></span></Button>
                         </Card.Body>
                     </Card>
                 </Col>
             </Row>
         </div>
     )
-}
+})
 
 export default OrderNowSection

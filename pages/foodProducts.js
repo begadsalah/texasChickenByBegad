@@ -24,8 +24,7 @@ export const getStaticProps = async () => {
         }
     };
 };
-
-const FoodProducts = ({ foodProduct, product, addToCart, loadCurrentItem }) => {
+const FoodProducts = React.forwardRef(({ onClick, href, foodProduct, product, addToCart, loadCurrentItem }, ref) => {
 
     return (
         <div className={styles.container}>
@@ -73,7 +72,7 @@ const FoodProducts = ({ foodProduct, product, addToCart, loadCurrentItem }) => {
             </Row>
         </div>
     )
-}
+})
 const mapDispatchToProps = (dispatch) => {
     return {
         addToCart: (id) => dispatch(addToCart(id)),

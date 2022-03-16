@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { connect } from "react-redux";
 
-const Navbar = ({ cart }) => {
+const Navbar = React.forwardRef(({ onClick, href, cart }, ref) => {
     const [cartCount, setCartCount] = useState(0);
     useEffect(() => {
         let count = 0;
@@ -21,7 +21,7 @@ const Navbar = ({ cart }) => {
             <div className={styles.row}>
                 <div className={styles.col}>
                     <div className={styles.col}>
-                        <Link href="/"><Image className={styles.logo} src="/images/texasLogo2.png" width={130} height={90}></Image></Link>
+                        <Link passHref href="/"><Image className={styles.logo} src="/images/texasLogo2.png" width={130} height={90}></Image></Link>
                     </div>
                 </div>
                 <div className={styles.col} style={{
@@ -30,16 +30,16 @@ const Navbar = ({ cart }) => {
                 }}>
                     <u className={styles.list}>
                         <li className={styles.listItem}>
-                            <Link href="/Story"><a className={styles.navbarLink}>Story</a></Link>
+                            <Link passHref href="/Story"><a className={styles.navbarLink}>Story</a></Link>
                         </li>
                         <li className={styles.listItem}>
-                            <Link href="/Catagories"><a className={styles.navbarLink}>food</a></Link>
+                            <Link passHref href="/Catagories"><a className={styles.navbarLink}>food</a></Link>
                         </li>
                         <li className={styles.listItem}>
-                            <Link href="/Location"><a className={styles.navbarLink}>Location</a></Link>
+                            <Link passHref href="/Location"><a className={styles.navbarLink}>Location</a></Link>
                         </li>
                         <li className={styles.listItemOrder}>
-                            <Link href="/foodCatagories"><a className={styles.navbarLinkOrder}>Order now</a></Link>
+                            <Link passHref href="/foodCatagories"><a className={styles.navbarLinkOrder}>Order now</a></Link>
                         </li>
                     </u>
                 </div>
@@ -48,7 +48,7 @@ const Navbar = ({ cart }) => {
                         <FontAwesomeIcon icon={['fas', 'fa-user-circle']} style={{ color: 'rgb(247, 175, 43)', width: '1.1rem', height: '1.1rem' }} />
                     </div>
                     <div className={styles.cart}>
-                        <Link href="/food">
+                        <Link passHref href="/food">
                             <Image src="/images/download.png" alt="Phone" width={30} height={28}></Image>
                         </Link>
                         <div className={styles.cartCounter}>{cartCount}</div>
@@ -63,7 +63,7 @@ const Navbar = ({ cart }) => {
             </div>
         </div >
     );
-}
+})
 
 const mapStateToProps = (state) => {
     return {
